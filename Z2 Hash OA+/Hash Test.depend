@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1586378966 source:g:\codeblocks\projekty\hash test\main.c
+	<stdio.h>
+	<stdlib.h>
+
