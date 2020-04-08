@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1586350877 source:g:\codeblocks\projekty\z2 bvs tankovic\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

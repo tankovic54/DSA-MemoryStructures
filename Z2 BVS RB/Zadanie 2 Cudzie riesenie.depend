@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1586350716 source:g:\codeblocks\projekty\zadanie 2 cudzie riesenie\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
