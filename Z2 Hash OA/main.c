@@ -90,16 +90,33 @@ void insert(int **pole, int data){
 }
 
 int search(int *pole, int s){
-    int flag = 1;
+    int flag = 0;
     int velkost;
     velkost = tabCounter(pole);
-    for (int i = 0; i < velkost; i++){
-        if (pole[i] == s) {
-                printf("najdene");
-                flag = 0;
-                }
+
+    int kluc = s % velkost;
+
+    int i = kluc;
+    while (i < velkost){
+        if (pole[i] == s)
+            {
+                flag = 1;
+                break;
+                return s;
+            }
+            else i++;
     }
-if (flag) printf("\nPrvok nenajdeny");
+if (flag) {
+    int j = 0;
+    while (j < velkost){
+        if (pole[j] == s)
+            {
+                break;
+                return s;
+            }
+            else j++;
+    }
+}
 return 0;
 }
 
@@ -115,9 +132,9 @@ void vypisTab(int *pole){
 int main(){
     int *pole;
     pole = nastavTab();
-    for (int i = 0; i < 10000; i++)
+    for (int i = 0; i < 100000; i++)
     {
-    insert(&pole, i);
+    insert(&pole, 8);
     }
     //vypisTab(pole);
     //printf("\n");
